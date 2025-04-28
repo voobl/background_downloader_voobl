@@ -1080,6 +1080,9 @@ Future<http.Response> _doRequest(
     (Request, Duration?, Map<String, dynamic>, bool) params) async {
   final (request, requestTimeout, proxy, bypassTLSCertificateValidation) =
       params;
+
+print("test test");
+    
   Logger.root.level = Level.ALL;
   Logger.root.onRecord.listen((LogRecord rec) {
     if (kDebugMode) {
