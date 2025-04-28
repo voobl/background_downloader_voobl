@@ -35,7 +35,7 @@ class DataTaskWorker(applicationContext: Context, workerParams: WorkerParameters
             // HTTP response code not OK
             Log.i(
                 TAG,
-                "Response code ${connection.responseCode} for taskId ${task.taskId}"
+                "Response code 555 ${connection.responseCode} for taskId ${task.taskId}"
             )
             val errorContent = responseErrorContent(connection)
             taskException = TaskException(
